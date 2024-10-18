@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
         
-        if(Input.GetButtonDown("Attack") && currentState != PlayerState.attack){
+        if(Input.GetButtonDown("Attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger){
             StartCoroutine(AttackCo());
         }
 
@@ -77,4 +77,17 @@ public class PlayerMovement : MonoBehaviour
             transform.position + speed * Time.deltaTime * change
         );
     }
+
+    public void Knock(Rigidbody2D other, float knocktime){
+        StartCoroutine(KnockCoroutine(other, knocktime));
+    }
+
+    private IEnumerator KnockCoroutine(Rigidbody2D other, float knocktime){
+            yield return new WaitForSeconds(knocktime);
+
+            myRigidBody.velocity = new Vector2();
+            currentState = PlayerState.walk;
+            //myRigidBody.velocity = Vector2.zero;
+    }
+
 }
