@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum PlayerState{
+    idle,
     walk,
     attack,
-    interact
+    interact, 
+    stagger
 }
 
 public class PlayerMovement : MonoBehaviour
