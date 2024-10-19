@@ -11323,6 +11323,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 969955521398684672, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 969955521398684672, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24
+      objectReference: {fileID: 0}
     - target: {fileID: 3340181147769053564, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -11338,6 +11346,14 @@ PrefabInstance:
     - target: {fileID: 6338384821986144284, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
       propertyPath: m_Name
       value: Canon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010278515208962807, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010278515208962807, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
+      propertyPath: m_FlipY
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8010278515208962807, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
       propertyPath: m_SortingLayer
@@ -11400,9 +11416,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1217498262615225839, guid: bf26115a68624d54ebe2df050e56b2c5, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3721430716451063590, guid: bf26115a68624d54ebe2df050e56b2c5, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285391728481464469, guid: bf26115a68624d54ebe2df050e56b2c5, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6936796032949765026, guid: bf26115a68624d54ebe2df050e56b2c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11443,6 +11467,14 @@ PrefabInstance:
     - target: {fileID: 6936796032949765026, guid: bf26115a68624d54ebe2df050e56b2c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142200755470558088, guid: bf26115a68624d54ebe2df050e56b2c5, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965687221860713573, guid: bf26115a68624d54ebe2df050e56b2c5, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11501,6 +11533,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5500385872376772256, guid: d316322382750a842a8830c24c2e857b, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500385872376772256, guid: d316322382750a842a8830c24c2e857b, type: 3}
+      propertyPath: maxHealth
+      value: 
+      objectReference: {fileID: 11400000, guid: c1ebad2611d016c4b93edd2f1a7c8d3f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

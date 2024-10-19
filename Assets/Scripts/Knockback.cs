@@ -8,6 +8,8 @@ public class Knockback : MonoBehaviour
     float thrust;
     [SerializeField]
     float knocktime;
+    [SerializeField]
+    float damage;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class Knockback : MonoBehaviour
 
                 if(other.gameObject.CompareTag("Enemy")){
                     hit.GetComponentInParent<EnemyBehavior>().currentState = EnemyState.stagger;
-                    hit.GetComponentInParent<EnemyBehavior>().Knock(hit, knocktime);
+                    hit.GetComponentInParent<EnemyBehavior>().Knock(hit, knocktime, damage);
                 }
                 if(other.gameObject.CompareTag("PlayerHitBox")){
                     hit.GetComponentInParent<PlayerMovement>().currentState = PlayerState.stagger;
