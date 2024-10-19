@@ -4,6 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/***************************************************************
+*file: HeartManager.cs
+*author: Ryan Yang and James Wang
+*class: CS 4700 – Game Development
+*assignment: program 3
+*date last modified: 10/18/2024
+*
+*purpose: Tracks all hearts that the player has and displays the
+*apporpriate sprites depending on the health of the player. 
+*Transitions to the lose screen when player health is depleted.
+*
+****************************************************************/
+
+
 public class HeartManager : MonoBehaviour
 {
     public Image[] hearts;

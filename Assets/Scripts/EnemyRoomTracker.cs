@@ -4,10 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
 
+/***************************************************************
+*file: EnemyRoomTracker.cs
+*author: Ryan Yang and James Wang
+*class: CS 4700 – Game Development
+*assignment: program 3
+*date last modified: 10/18/2024
+*
+*purpose: Tracks the status of all enemies in the final room.
+*Displays the win screen once all enemies are defeated.
+*
+****************************************************************/
+
+
 public class EnemyRoomTracker : MonoBehaviour
 {
     public GameObject[] enemies;
-    bool enemiesDefeated;
 
     // Start is called before the first frame update
     void Start()
@@ -15,14 +27,14 @@ public class EnemyRoomTracker : MonoBehaviour
         for(int i = 0; i < enemies.Length; i++){
             enemies[i].SetActive(true);
         }
-        enemiesDefeated = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         if(AreAllEnemiesDefeated()){
-            enemiesDefeated = true;
+            
             Debug.Log("All enemies defeated");
             SceneManager.LoadScene("WinScene");
         }

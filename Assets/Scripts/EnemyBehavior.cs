@@ -3,6 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/***************************************************************
+*file: EnemyBehavior.cs
+*author: Ryan Yang and James Wang
+*class: CS 4700 – Game Development
+*assignment: program 3
+*date last modified: 10/18/2024
+*
+*purpose: Script to handle all enemy behavior. Includes 
+*statemachine and script to handle when hit, as well as when 
+*health is depleted.
+*
+****************************************************************/
+
 public enum EnemyState{
     idle,
     walking,

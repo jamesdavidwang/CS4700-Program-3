@@ -2,6 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/***************************************************************
+*file: PlayerMovement.cs
+*author: Ryan Yang and James Wang
+*class: CS 4700 – Game Development
+*assignment: program 3
+*date last modified: 10/18/2024
+*
+*purpose: Main Controller for the Player
+*
+****************************************************************/
+
 public enum PlayerState{
     idle,
     walk,

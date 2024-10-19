@@ -2,6 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/***************************************************************
+*file: Knockback.cs
+*author: Ryan Yang and James Wang
+*class: CS 4700 – Game Development
+*assignment: program 3
+*date last modified: 10/18/2024
+*
+*purpose: General script to handle when enemy or player is hit. 
+*Calls the knock method from respective enemy or player.
+*
+****************************************************************/
+
+
 public class Knockback : MonoBehaviour
 {
     [SerializeField]

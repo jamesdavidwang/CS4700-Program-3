@@ -3,6 +3,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/***************************************************************
+*file: DisplayDialog.cs
+*author: Ryan Yang and James Wang
+*class: CS 4700 – Game Development
+*assignment: program 3
+*date last modified: 10/18/2024
+*
+*purpose: Displays the dialog box and text when character enters
+*the range to read a sign
+*
+****************************************************************/
+
 public class DisplayDialog : MonoBehaviour
 {
     public GameObject dialogBox;

@@ -3,6 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/***************************************************************
+*file: CameraMovement.cs
+*author: Ryan Yang and James Wang
+*class: CS 4700 – Game Development
+*assignment: program 3
+*date last modified: 10/18/2024
+*
+*purpose: Moves the camera to each room, following the Player
+*
+****************************************************************/
+
 public class CameraMovement : MonoBehaviour
 {
 
