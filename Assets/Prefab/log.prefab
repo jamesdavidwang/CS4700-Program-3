@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: {fileID: 11400000, guid: bd065840d5175084f98d665a84fea861, type: 2}
-  health: 2
+  maxHealth: {fileID: 11400000, guid: c1ebad2611d016c4b93edd2f1a7c8d3f, type: 2}
+  health: 1
   enemyName: Willard
   baseAttack: 1
   moveSpeed: 2
@@ -297,3 +297,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knocktime: 0.3
+  damage: 1

@@ -14,6 +14,7 @@ public class cannonscript : MonoBehaviour
     void Start()
     {
         timeBetween = startTimeBetween;
+        
 
     }
 
@@ -21,11 +22,13 @@ public class cannonscript : MonoBehaviour
     void Update()
     {
         if(timeBetween <=0){
+            
             if(bulletClone != null){
                 Destroy(bulletClone);
             }
 
             bulletClone = Instantiate(bullet, firepoint.position, firepoint.rotation);
+            
             timeBetween = startTimeBetween;
         }
         else{
