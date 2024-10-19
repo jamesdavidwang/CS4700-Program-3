@@ -6,6 +6,8 @@ public class cannonscript : MonoBehaviour
 {
     public Transform firepoint;
     public GameObject bullet;
+
+    private GameObject bulletClone;
     float timeBetween;
     public float startTimeBetween;
     // Start is called before the first frame update
@@ -19,7 +21,11 @@ public class cannonscript : MonoBehaviour
     void Update()
     {
         if(timeBetween <=0){
-            Instantiate(bullet, firepoint.position, firepoint.rotation);
+            if(bulletClone != null){
+                Destroy(bulletClone);
+            }
+
+            bulletClone = Instantiate(bullet, firepoint.position, firepoint.rotation);
             timeBetween = startTimeBetween;
         }
         else{
