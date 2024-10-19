@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HeartManager : MonoBehaviour
 {
@@ -28,10 +29,15 @@ public class HeartManager : MonoBehaviour
 
     public void UpdateHearts(){
         float tempHealth = playerCurrentHealth.runtimeValue / 2;
+
+        bool allHeartsEmpty = true;
+
         for(int i = 0; i < heartContainers.initialValue; i++){
             if(i <= tempHealth - 1){
                 //Full Heart
                 hearts[i].sprite = fullHeart;
+                allHeartsEmpty = false;  // At least one heart is still full
+
             }
             else if(i >= tempHealth){ 
                 //Empty Heart
@@ -40,7 +46,12 @@ public class HeartManager : MonoBehaviour
             else {
                 //Half Heart
                 hearts[i].sprite = halfHeart;
+                allHeartsEmpty = false;  // At least one heart is still full
             }
+        }
+        if (allHeartsEmpty)
+        {
+            SceneManager.LoadScene("LoseScene");
         }
     }
  

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CS4700 Program 3.sln"
+    "dotnet.defaultSolution": "CS4700-Program-3.sln"
 }
