@@ -17,7 +17,6 @@ public class EnemyBehavior : MonoBehaviour
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
-
     private Rigidbody2D rb;
 
     public void Knock(Rigidbody2D other, float knocktime, float damage){
