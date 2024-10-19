@@ -11226,13 +11226,13 @@ MonoBehaviour:
   signalEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+      - m_Target: {fileID: 2031478984}
+        m_TargetAssemblyTypeName: HeartManager, Assembly-CSharp
+        m_MethodName: UpdateHearts
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11420,6 +11420,7 @@ MonoBehaviour:
   halfHeart: {fileID: -1116662237, guid: 25f6a0194556a6242af1ee0d9ac63e2c, type: 3}
   emptyHeart: {fileID: 178294081, guid: 25f6a0194556a6242af1ee0d9ac63e2c, type: 3}
   heartContainers: {fileID: 11400000, guid: bdb5594d0f03fb74d9cfdd78eff5b9fb, type: 2}
+  playerCurrentHealth: {fileID: 11400000, guid: 13706d8fe6439014a81e7da1aab05f36, type: 2}
 --- !u!1 &2045421740
 GameObject:
   m_ObjectHideFlags: 0
@@ -11974,6 +11975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8845357550473429416, guid: bde6111fb41b8174e935a5a53e1007fa, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12120,6 +12125,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 
       objectReference: {fileID: 11400000, guid: c1ebad2611d016c4b93edd2f1a7c8d3f, type: 2}
+    - target: {fileID: 6926992249200861050, guid: d316322382750a842a8830c24c2e857b, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
