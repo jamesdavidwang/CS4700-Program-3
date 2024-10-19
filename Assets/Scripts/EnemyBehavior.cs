@@ -12,14 +12,16 @@ public enum EnemyState{
 public class EnemyBehavior : MonoBehaviour
 {
     public EnemyState currentState;
-    public int health;
+    public CharacterValue maxHealth;
+    public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
     private Rigidbody2D rb;
 
-    public void Knock(Rigidbody2D other, float knocktime){
+    public void Knock(Rigidbody2D other, float knocktime, float damage){
         StartCoroutine(KnockCoroutine(other, knocktime));
+        TakeDamage(damage);
     }
     private IEnumerator KnockCoroutine(Rigidbody2D other, float knocktime){
             yield return new WaitForSeconds(knocktime);
@@ -28,10 +30,21 @@ public class EnemyBehavior : MonoBehaviour
             currentState = EnemyState.idle;
     }
 
+    private void TakeDamage(float damage){
+        health -= damage;
+        if(health <= 0){
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    void Awake(){
+        health = maxHealth.initialValue;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
